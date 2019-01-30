@@ -1,14 +1,18 @@
-# React Native AWS3
+# React Native AWS3 YK
+
+## Project forked from react-native-aws3 Only change of s3 bucket url
+
+Default link will be
+
+```javascript
+`https://s3.${options.region}.amazonaws.com/${options.bucket}/`
+```
 
 React Native AWS3 is a module for uploading files to S3. Unlike other libraries out there, there are no native dependencies.
 
+```curl
+npm install --save react-native-aws3-yk
 ```
-npm install --save react-native-aws3
-```
-
-[![build status](https://circleci.com/gh/benjreinhart/react-native-aws3.svg?style=shield&circle-token=c7cb5ba4654c9d66bbfeac9809e50aa0fbf0af09)](https://circleci.com/gh/benjreinhart/react-native-aws3)
-[![npm version](https://img.shields.io/npm/v/react-native-aws3.svg?style=flat-square)](https://www.npmjs.com/package/react-native-aws3)
-[![npm downloads](https://img.shields.io/npm/dm/react-native-aws3.svg?style=flat-square)](https://www.npmjs.com/package/react-native-aws3)
 
 ## Note on S3 user permissions
 
@@ -40,7 +44,7 @@ The user associated with the `accessKey` and `secretKey` you use must have the a
 ## Example
 
 ```javascript
-import { RNS3 } from 'react-native-aws3';
+import { RNS3 } from 'react-native-aws3-yk';
 
 const file = {
   // `uri` can also be a file system path (i.e. file://)
@@ -95,7 +99,7 @@ Arguments:
   * `accessKey` **required** - Your S3 `AWSAccessKeyId`
   * `secretKey` **required** - Your S3 `AWSSecretKey`
   * `successActionStatus` - HTTP response status if successful, defaults to 201
-  * `awsUrl` - [AWS S3 url](http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region). Defaults to `s3.amazonaws.com`
+  * ~~`awsUrl` - [AWS S3 url](http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region). Defaults to `s3.amazonaws.com`~~ I am ignoring it.
   * `timeDelta` - Devices time offset from world clock in milliseconds, defaults to 0
 
 Returns an object that wraps an `XMLHttpRequest` instance and behaves like a promise, with the following additional methods:
@@ -117,7 +121,7 @@ RNS3.put(file, option)
 
 ## TODO
 
-- [ ] Support `DeleteObject` and (authenticated) `GetObject` operations.
+- ~~[ ] Support `DeleteObject` and (authenticated) `GetObject` operations.~~ I am not planning it.
 
 
 ## License
