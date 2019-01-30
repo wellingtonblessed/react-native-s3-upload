@@ -1,5 +1,5 @@
 {
-  "name": "react-native-aws3-yk",
+  "name": "react-native-s3-upload",
   "version": "0.0.10",
   "description": "Pure JavaScript react native library for uploading to AWS S3",
   "author": {

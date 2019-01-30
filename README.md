@@ -1,4 +1,4 @@
-# React Native AWS3 YK
+# React Native S3 Upload
 
 ## Project forked from react-native-aws3 Only change of s3 bucket url
 
@@ -11,7 +11,7 @@ Default link will be
 React Native AWS3 is a module for uploading files to S3. Unlike other libraries out there, there are no native dependencies.
 
 ```curl
-npm install --save react-native-aws3-yk
+npm install --save react-native-s3-upload
 ```
 
 ## Note on S3 user permissions
@@ -44,7 +44,7 @@ The user associated with the `accessKey` and `secretKey` you use must have the a
 ## Example
 
 ```javascript
-import { RNS3 } from 'react-native-aws3-yk';
+import { RNS3 } from 'react-native-s3-upload';
 
 const file = {
   // `uri` can also be a file system path (i.e. file://)
