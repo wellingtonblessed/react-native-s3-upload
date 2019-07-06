@@ -30,7 +30,7 @@
   "scripts": {
     "build": "babel src --out-dir lib",
     "clean": "rm -rf lib",
-    "prepublish": "yarn run clean && yarn run build",
+    "prepublish": "npm run clean && npm run test && npm run build",
     "test": "jest",
     "test-watch": "jest --watch"
   },
